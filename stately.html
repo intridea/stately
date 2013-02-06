@@ -5,315 +5,225 @@
   <title>Stately | The simple map font</title>
   <meta name="description" content="Stately | The simple map font">
   <meta name="author" content="Ben Markowitz">
-  <link rel="stylesheet" href="screen.css?v=1.0">
-  <link rel="stylesheet" href="stately/stately.css?v=1.0">
-  <style>
-	
-	ul.stately{
-		background:#f2f2f2;	
-		padding:20px;
-		border-radius:10px;
-		border-top:1px solid #dddddd;
-
-	}
-	
-	#intrideans{
-		color:#b0b0b0;
-	}
-
-	#intrideans li#ca,
-	#intrideans li#co,
-	#intrideans li#dc,
-	#intrideans li#fl,
-	#intrideans li#ks,
-	#intrideans li#md,
-	#intrideans li#mn,
-	#intrideans li#mi,
-	#intrideans li#nj,
-	#intrideans li#ny,
-	#intrideans li#oh,
-	#intrideans li#va,
-	#intrideans li#wa,
-	#intrideans li#wy{
-		color: #a3d07e;
-	}
-	
-	#election li{
-		color:#00aeef;
-	}
-	
-	#election li#id,
-	#election li#ut,
-	#election li#az,
-	#election li#ak,
-	#election li#wy,
-	#election li#mt,
-	#election li#no,
-	#election li#sd,
-	#election li#nd,
-	#election li#ne,
-	#election li#ks,
-	#election li#ok,
-	#election li#tx,
-	#election li#mo,
-	#election li#ar,
-	#election li#la,
-	#election li#ms,
-	#election li#tn,
-	#election li#ky,
-	#election li#wv,
-	#election li#nc,
-	#election li#sc,
-	#election li#ga,
-	#election li#al
-	{
-		color:#ff7474;
-	}
-	
-	#presidents li{
-		color:#b0b0b0;
-	}
-	
-	#presidents li#va,          
-	#presidents li#oh,
-	#presidents li#ma,
-	#presidents li#ny,
-	#presidents li#nc,
-	#presidents li#tx,
-	#presidents li#vt
-	#presidents li#ak,
-	#presidents li#ca,
-	#presidents li#ga,
-	#presidents li#hi,
-	#presidents li#il,
-	#presidents li#ia,
-	#presidents li#ky,
-	#presidents li#mi,
-	#presidents li#ne,
-	#presidents li#nj,
-	#presidents li#pa,
-	#presidents li#sc
-	{
-		color:#ff8b3e;
-	}
-  </style>
+  <link rel="stylesheet" href="assets/css/screen.css?v=1.0">
+  <link rel="stylesheet" href="assets/css/stately.css?v=1.0">
 </head>
 <body>
 	<h1>Plain</h1>
 	<ul class="stately" id="plain"> 
-		<li data-state="al" id="al">A</li>
-		<li data-state="ak" id="ak">B</li>
-		<li data-state="ar" id="ar">C</li>						
-		<li data-state="az" id="az">D</li>
-		<li data-state="ca" id="ca">E</li>
-		<li data-state="co" id="co">F</li>
-		<li data-state="ct" id="ct">G</li>
-		<li data-state="de" id="de">H</li>
-		<li data-state="dc" id="dc">I</li>
-		<li data-state="fl" id="fl">J</li>
-		<li data-state="ga" id="ga">K</li>
-		<li data-state="hi" id="hi">L</li>
-		<li data-state="id" id="id">M</li>
-		<li data-state="il" id="il">N</li>
-		<li data-state="in" id="in">O</li>
-		<li data-state="ia" id="ia">P</li>
-		<li data-state="ks" id="ks">Q</li>
-		<li data-state="ky" id="ky">R</li>
-		<li data-state="la" id="la">S</li>
-		<li data-state="me" id="me">T</li>
-		<li data-state="md" id="md">U</li>
-		<li data-state="ma" id="ma">V</li>
-		<li data-state="mi" id="mi">W</li>
-		<li data-state="mn" id="mn">X</li>
-		<li data-state="ms" id="ms">Y</li>
-		<li data-state="mo" id="mo">Z</li>
-		<li data-state="mt" id="mt">a</li>
-		<li data-state="ne" id="ne">b</li>
-		<li data-state="nv" id="nv">c</li>
-		<li data-state="nh" id="nh">d</li>
-		<li data-state="nj" id="nj">e</li>
-		<li data-state="nm" id="nm">f</li>
-		<li data-state="ny" id="ny">g</li>
-		<li data-state="nc" id="nc">h</li>
-		<li data-state="nd" id="nd">i</li>
-		<li data-state="oh" id="oh">j</li>			
-		<li data-state="ok" id="ok">k</li>
-		<li data-state="or" id="or">l</li>
-		<li data-state="pa" id="pa">m</li>
-		<li data-state="ri" id="ri">n</li>
-		<li data-state="sc" id="sc">o</li>
-		<li data-state="sd" id="sd">p</li>
-		<li data-state="tn" id="tn">q</li>
-		<li data-state="tx" id="tx">r</li>
-		<li data-state="ut" id="ut">s</li>
-		<li data-state="va" id="va">t</li>
-		<li data-state="vt" id="vt">u</li>			
-		<li data-state="wa" id="wa">v</li>
-		<li data-state="wv" id="wv">w</li>
-		<li data-state="wi" id="wi">x</li>
-		<li data-state="wy" id="wy">y</li>	
+		<li data-state="al" class="al">A</li>
+		<li data-state="ak" class="ak">B</li>
+		<li data-state="ar" class="ar">C</li>						
+		<li data-state="az" class="az">D</li>
+		<li data-state="ca" class="ca">E</li>
+		<li data-state="co" class="co">F</li>
+		<li data-state="ct" class="ct">G</li>
+		<li data-state="de" class="de">H</li>
+		<li data-state="dc" class="dc">I</li>
+		<li data-state="fl" class="fl">J</li>
+		<li data-state="ga" class="ga">K</li>
+		<li data-state="hi" class="hi">L</li>
+		<li data-state="id" class="id">M</li>
+		<li data-state="il" class="il">N</li>
+		<li data-state="in" class="in">O</li>
+		<li data-state="ia" class="ia">P</li>
+		<li data-state="ks" class="ks">Q</li>
+		<li data-state="ky" class="ky">R</li>
+		<li data-state="la" class="la">S</li>
+		<li data-state="me" class="me">T</li>
+		<li data-state="md" class="md">U</li>
+		<li data-state="ma" class="ma">V</li>
+		<li data-state="mi" class="mi">W</li>
+		<li data-state="mn" class="mn">X</li>
+		<li data-state="ms" class="ms">Y</li>
+		<li data-state="mo" class="mo">Z</li>
+		<li data-state="mt" class="mt">a</li>
+		<li data-state="ne" class="ne">b</li>
+		<li data-state="nv" class="nv">c</li>
+		<li data-state="nh" class="nh">d</li>
+		<li data-state="nj" class="nj">e</li>
+		<li data-state="nm" class="nm">f</li>
+		<li data-state="ny" class="ny">g</li>
+		<li data-state="nc" class="nc">h</li>
+		<li data-state="nd" class="nd">i</li>
+		<li data-state="oh" class="oh">j</li>			
+		<li data-state="ok" class="ok">k</li>
+		<li data-state="or" class="or">l</li>
+		<li data-state="pa" class="pa">m</li>
+		<li data-state="ri" class="ri">n</li>
+		<li data-state="sc" class="sc">o</li>
+		<li data-state="sd" class="sd">p</li>
+		<li data-state="tn" class="tn">q</li>
+		<li data-state="tx" class="tx">r</li>
+		<li data-state="ut" class="ut">s</li>
+		<li data-state="va" class="va">t</li>
+		<li data-state="vt" class="vt">u</li>			
+		<li data-state="wa" class="wa">v</li>
+		<li data-state="wv" class="wv">w</li>
+		<li data-state="wi" class="wi">x</li>
+		<li data-state="wy" class="wy">y</li>	
 	</ul>
 	<h1>Intrideans</h1>
 	<ul class="stately" id="intrideans"> 
-		<li data-state="al" id="al">A</li>
-		<li data-state="ak" id="ak">B</li>
-		<li data-state="ar" id="ar">C</li>						
-		<li data-state="az" id="az">D</li>
-		<li data-state="ca" id="ca">E</li>
-		<li data-state="co" id="co">F</li>
-		<li data-state="ct" id="ct">G</li>
-		<li data-state="de" id="de">H</li>
-		<li data-state="dc" id="dc">I</li>
-		<li data-state="fl" id="fl">J</li>
-		<li data-state="ga" id="ga">K</li>
-		<li data-state="hi" id="hi">L</li>
-		<li data-state="id" id="id">M</li>
-		<li data-state="il" id="il">N</li>
-		<li data-state="in" id="in">O</li>
-		<li data-state="ia" id="ia">P</li>
-		<li data-state="ks" id="ks">Q</li>
-		<li data-state="ky" id="ky">R</li>
-		<li data-state="la" id="la">S</li>
-		<li data-state="me" id="me">T</li>
-		<li data-state="md" id="md">U</li>
-		<li data-state="ma" id="ma">V</li>
-		<li data-state="mi" id="mi">W</li>
-		<li data-state="mn" id="mn">X</li>
-		<li data-state="ms" id="ms">Y</li>
-		<li data-state="mo" id="mo">Z</li>
-		<li data-state="mt" id="mt">a</li>
-		<li data-state="ne" id="ne">b</li>
-		<li data-state="nv" id="nv">c</li>
-		<li data-state="nh" id="nh">d</li>
-		<li data-state="nj" id="nj">e</li>
-		<li data-state="nm" id="nm">f</li>
-		<li data-state="ny" id="ny">g</li>
-		<li data-state="nc" id="nc">h</li>
-		<li data-state="nd" id="nd">i</li>
-		<li data-state="oh" id="oh">j</li>			
-		<li data-state="ok" id="ok">k</li>
-		<li data-state="or" id="or">l</li>
-		<li data-state="pa" id="pa">m</li>
-		<li data-state="ri" id="ri">n</li>
-		<li data-state="sc" id="sc">o</li>
-		<li data-state="sd" id="sd">p</li>
-		<li data-state="tn" id="tn">q</li>
-		<li data-state="tx" id="tx">r</li>
-		<li data-state="ut" id="ut">s</li>
-		<li data-state="va" id="va">t</li>
-		<li data-state="vt" id="vt">u</li>			
-		<li data-state="wa" id="wa">v</li>
-		<li data-state="wv" id="wv">w</li>
-		<li data-state="wi" id="wi">x</li>
-		<li data-state="wy" id="wy">y</li>	
+		<li data-state="al" class="al">A</li>
+		<li data-state="ak" class="ak">B</li>
+		<li data-state="ar" class="ar">C</li>						
+		<li data-state="az" class="az">D</li>
+		<li data-state="ca" class="ca">E</li>
+		<li data-state="co" class="co">F</li>
+		<li data-state="ct" class="ct">G</li>
+		<li data-state="de" class="de">H</li>
+		<li data-state="dc" class="dc">I</li>
+		<li data-state="fl" class="fl">J</li>
+		<li data-state="ga" class="ga">K</li>
+		<li data-state="hi" class="hi">L</li>
+		<li data-state="id" class="id">M</li>
+		<li data-state="il" class="il">N</li>
+		<li data-state="in" class="in">O</li>
+		<li data-state="ia" class="ia">P</li>
+		<li data-state="ks" class="ks">Q</li>
+		<li data-state="ky" class="ky">R</li>
+		<li data-state="la" class="la">S</li>
+		<li data-state="me" class="me">T</li>
+		<li data-state="md" class="md">U</li>
+		<li data-state="ma" class="ma">V</li>
+		<li data-state="mi" class="mi">W</li>
+		<li data-state="mn" class="mn">X</li>
+		<li data-state="ms" class="ms">Y</li>
+		<li data-state="mo" class="mo">Z</li>
+		<li data-state="mt" class="mt">a</li>
+		<li data-state="ne" class="ne">b</li>
+		<li data-state="nv" class="nv">c</li>
+		<li data-state="nh" class="nh">d</li>
+		<li data-state="nj" class="nj">e</li>
+		<li data-state="nm" class="nm">f</li>
+		<li data-state="ny" class="ny">g</li>
+		<li data-state="nc" class="nc">h</li>
+		<li data-state="nd" class="nd">i</li>
+		<li data-state="oh" class="oh">j</li>			
+		<li data-state="ok" class="ok">k</li>
+		<li data-state="or" class="or">l</li>
+		<li data-state="pa" class="pa">m</li>
+		<li data-state="ri" class="ri">n</li>
+		<li data-state="sc" class="sc">o</li>
+		<li data-state="sd" class="sd">p</li>
+		<li data-state="tn" class="tn">q</li>
+		<li data-state="tx" class="tx">r</li>
+		<li data-state="ut" class="ut">s</li>
+		<li data-state="va" class="va">t</li>
+		<li data-state="vt" class="vt">u</li>			
+		<li data-state="wa" class="wa">v</li>
+		<li data-state="wv" class="wv">w</li>
+		<li data-state="wi" class="wi">x</li>
+		<li data-state="wy" class="wy">y</li>	
 	</ul>
 	<h1>2012 Presidential Election</h1>
 	<ul class="stately" id="election"> 
-		<li data-state="al" id="al">A</li>
-		<li data-state="ak" id="ak">B</li>
-		<li data-state="ar" id="ar">C</li>						
-		<li data-state="az" id="az">D</li>
-		<li data-state="ca" id="ca">E</li>
-		<li data-state="co" id="co">F</li>
-		<li data-state="ct" id="ct">G</li>
-		<li data-state="de" id="de">H</li>
-		<li data-state="dc" id="dc">I</li>
-		<li data-state="fl" id="fl">J</li>
-		<li data-state="ga" id="ga">K</li>
-		<li data-state="hi" id="hi">L</li>
-		<li data-state="id" id="id">M</li>
-		<li data-state="il" id="il">N</li>
-		<li data-state="in" id="in">O</li>
-		<li data-state="ia" id="ia">P</li>
-		<li data-state="ks" id="ks">Q</li>
-		<li data-state="ky" id="ky">R</li>
-		<li data-state="la" id="la">S</li>
-		<li data-state="me" id="me">T</li>
-		<li data-state="md" id="md">U</li>
-		<li data-state="ma" id="ma">V</li>
-		<li data-state="mi" id="mi">W</li>
-		<li data-state="mn" id="mn">X</li>
-		<li data-state="ms" id="ms">Y</li>
-		<li data-state="mo" id="mo">Z</li>
-		<li data-state="mt" id="mt">a</li>
-		<li data-state="ne" id="ne">b</li>
-		<li data-state="nv" id="nv">c</li>
-		<li data-state="nh" id="nh">d</li>
-		<li data-state="nj" id="nj">e</li>
-		<li data-state="nm" id="nm">f</li>
-		<li data-state="ny" id="ny">g</li>
-		<li data-state="nc" id="nc">h</li>
-		<li data-state="nd" id="nd">i</li>
-		<li data-state="oh" id="oh">j</li>			
-		<li data-state="ok" id="ok">k</li>
-		<li data-state="or" id="or">l</li>
-		<li data-state="pa" id="pa">m</li>
-		<li data-state="ri" id="ri">n</li>
-		<li data-state="sc" id="sc">o</li>
-		<li data-state="sd" id="sd">p</li>
-		<li data-state="tn" id="tn">q</li>
-		<li data-state="tx" id="tx">r</li>
-		<li data-state="ut" id="ut">s</li>
-		<li data-state="va" id="va">t</li>
-		<li data-state="vt" id="vt">u</li>			
-		<li data-state="wa" id="wa">v</li>
-		<li data-state="wv" id="wv">w</li>
-		<li data-state="wi" id="wi">x</li>
-		<li data-state="wy" id="wy">y</li>	
+		<li data-state="al" class="al">A</li>
+		<li data-state="ak" class="ak">B</li>
+		<li data-state="ar" class="ar">C</li>						
+		<li data-state="az" class="az">D</li>
+		<li data-state="ca" class="ca">E</li>
+		<li data-state="co" class="co">F</li>
+		<li data-state="ct" class="ct">G</li>
+		<li data-state="de" class="de">H</li>
+		<li data-state="dc" class="dc">I</li>
+		<li data-state="fl" class="fl">J</li>
+		<li data-state="ga" class="ga">K</li>
+		<li data-state="hi" class="hi">L</li>
+		<li data-state="id" class="id">M</li>
+		<li data-state="il" class="il">N</li>
+		<li data-state="in" class="in">O</li>
+		<li data-state="ia" class="ia">P</li>
+		<li data-state="ks" class="ks">Q</li>
+		<li data-state="ky" class="ky">R</li>
+		<li data-state="la" class="la">S</li>
+		<li data-state="me" class="me">T</li>
+		<li data-state="md" class="md">U</li>
+		<li data-state="ma" class="ma">V</li>
+		<li data-state="mi" class="mi">W</li>
+		<li data-state="mn" class="mn">X</li>
+		<li data-state="ms" class="ms">Y</li>
+		<li data-state="mo" class="mo">Z</li>
+		<li data-state="mt" class="mt">a</li>
+		<li data-state="ne" class="ne">b</li>
+		<li data-state="nv" class="nv">c</li>
+		<li data-state="nh" class="nh">d</li>
+		<li data-state="nj" class="nj">e</li>
+		<li data-state="nm" class="nm">f</li>
+		<li data-state="ny" class="ny">g</li>
+		<li data-state="nc" class="nc">h</li>
+		<li data-state="nd" class="nd">i</li>
+		<li data-state="oh" class="oh">j</li>			
+		<li data-state="ok" class="ok">k</li>
+		<li data-state="or" class="or">l</li>
+		<li data-state="pa" class="pa">m</li>
+		<li data-state="ri" class="ri">n</li>
+		<li data-state="sc" class="sc">o</li>
+		<li data-state="sd" class="sd">p</li>
+		<li data-state="tn" class="tn">q</li>
+		<li data-state="tx" class="tx">r</li>
+		<li data-state="ut" class="ut">s</li>
+		<li data-state="va" class="va">t</li>
+		<li data-state="vt" class="vt">u</li>			
+		<li data-state="wa" class="wa">v</li>
+		<li data-state="wv" class="wv">w</li>
+		<li data-state="wi" class="wi">x</li>
+		<li data-state="wy" class="wy">y</li>	
 	</ul>
 	<h1>Presidential State</h1>
 	<ul class="stately" id="presidents"> 
-		<li data-state="al" id="al">A</li>
-		<li data-state="ak" id="ak">B</li>
-		<li data-state="ar" id="ar">C</li>						
-		<li data-state="az" id="az">D</li>
-		<li data-state="ca" id="ca">E</li>
-		<li data-state="co" id="co">F</li>
-		<li data-state="ct" id="ct">G</li>
-		<li data-state="de" id="de">H</li>
-		<li data-state="dc" id="dc">I</li>
-		<li data-state="fl" id="fl">J</li>
-		<li data-state="ga" id="ga">K</li>
-		<li data-state="hi" id="hi">L</li>
-		<li data-state="id" id="id">M</li>
-		<li data-state="il" id="il">N</li>
-		<li data-state="in" id="in">O</li>
-		<li data-state="ia" id="ia">P</li>
-		<li data-state="ks" id="ks">Q</li>
-		<li data-state="ky" id="ky">R</li>
-		<li data-state="la" id="la">S</li>
-		<li data-state="me" id="me">T</li>
-		<li data-state="md" id="md">U</li>
-		<li data-state="ma" id="ma">V</li>
-		<li data-state="mi" id="mi">W</li>
-		<li data-state="mn" id="mn">X</li>
-		<li data-state="ms" id="ms">Y</li>
-		<li data-state="mo" id="mo">Z</li>
-		<li data-state="mt" id="mt">a</li>
-		<li data-state="ne" id="ne">b</li>
-		<li data-state="nv" id="nv">c</li>
-		<li data-state="nh" id="nh">d</li>
-		<li data-state="nj" id="nj">e</li>
-		<li data-state="nm" id="nm">f</li>
-		<li data-state="ny" id="ny">g</li>
-		<li data-state="nc" id="nc">h</li>
-		<li data-state="nd" id="nd">i</li>
-		<li data-state="oh" id="oh">j</li>			
-		<li data-state="ok" id="ok">k</li>
-		<li data-state="or" id="or">l</li>
-		<li data-state="pa" id="pa">m</li>
-		<li data-state="ri" id="ri">n</li>
-		<li data-state="sc" id="sc">o</li>
-		<li data-state="sd" id="sd">p</li>
-		<li data-state="tn" id="tn">q</li>
-		<li data-state="tx" id="tx">r</li>
-		<li data-state="ut" id="ut">s</li>
-		<li data-state="va" id="va">t</li>
-		<li data-state="vt" id="vt">u</li>			
-		<li data-state="wa" id="wa">v</li>
-		<li data-state="wv" id="wv">w</li>
-		<li data-state="wi" id="wi">x</li>
-		<li data-state="wy" id="wy">y</li>	
+		<li data-state="al" class="al">A</li>
+		<li data-state="ak" class="ak">B</li>
+		<li data-state="ar" class="ar">C</li>						
+		<li data-state="az" class="az">D</li>
+		<li data-state="ca" class="ca">E</li>
+		<li data-state="co" class="co">F</li>
+		<li data-state="ct" class="ct">G</li>
+		<li data-state="de" class="de">H</li>
+		<li data-state="dc" class="dc">I</li>
+		<li data-state="fl" class="fl">J</li>
+		<li data-state="ga" class="ga">K</li>
+		<li data-state="hi" class="hi">L</li>
+		<li data-state="id" class="id">M</li>
+		<li data-state="il" class="il">N</li>
+		<li data-state="in" class="in">O</li>
+		<li data-state="ia" class="ia">P</li>
+		<li data-state="ks" class="ks">Q</li>
+		<li data-state="ky" class="ky">R</li>
+		<li data-state="la" class="la">S</li>
+		<li data-state="me" class="me">T</li>
+		<li data-state="md" class="md">U</li>
+		<li data-state="ma" class="ma">V</li>
+		<li data-state="mi" class="mi">W</li>
+		<li data-state="mn" class="mn">X</li>
+		<li data-state="ms" class="ms">Y</li>
+		<li data-state="mo" class="mo">Z</li>
+		<li data-state="mt" class="mt">a</li>
+		<li data-state="ne" class="ne">b</li>
+		<li data-state="nv" class="nv">c</li>
+		<li data-state="nh" class="nh">d</li>
+		<li data-state="nj" class="nj">e</li>
+		<li data-state="nm" class="nm">f</li>
+		<li data-state="ny" class="ny">g</li>
+		<li data-state="nc" class="nc">h</li>
+		<li data-state="nd" class="nd">i</li>
+		<li data-state="oh" class="oh">j</li>			
+		<li data-state="ok" class="ok">k</li>
+		<li data-state="or" class="or">l</li>
+		<li data-state="pa" class="pa">m</li>
+		<li data-state="ri" class="ri">n</li>
+		<li data-state="sc" class="sc">o</li>
+		<li data-state="sd" class="sd">p</li>
+		<li data-state="tn" class="tn">q</li>
+		<li data-state="tx" class="tx">r</li>
+		<li data-state="ut" class="ut">s</li>
+		<li data-state="va" class="va">t</li>
+		<li data-state="vt" class="vt">u</li>			
+		<li data-state="wa" class="wa">v</li>
+		<li data-state="wv" class="wv">w</li>
+		<li data-state="wi" class="wi">x</li>
+		<li data-state="wy" class="wy">y</li>	
 	</ul>
 </body>
 </html>
