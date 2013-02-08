@@ -20,79 +20,87 @@ For modern browsers ligatures are available and a state's abbreviation is its li
 You can use stately however you like, but some base Sass/CSS and HTML is included.
 Download and add the Stately folder to your project which includes the base CSS and the web font files. Grab the stately folder and add it to your project. Then add the stately.css to the head of your document.
 
-`<link rel="stylesheet" href="assets/css/stately.css">`
+```html
+<link rel="stylesheet" href="assets/css/stately.css">
+```
 
 Then add this markup to the page:
 
-    <ul class="stately"> 
-        <li data-state="al" class="al">A</li>
-        <li data-state="ak" class="ak">B</li>
-        <li data-state="ar" class="ar">C</li>						
-        <li data-state="az" class="az">D</li>
-        <li data-state="ca" class="ca">E</li>
-        <li data-state="co" class="co">F</li>
-        <li data-state="ct" class="ct">G</li>
-        <li data-state="de" class="de">H</li>
-        <li data-state="dc" class="dc">I</li>
-        <li data-state="fl" class="fl">J</li>
-        <li data-state="ga" class="ga">K</li>
-        <li data-state="hi" class="hi">L</li>
-        <li data-state="id" class="id">M</li>
-        <li data-state="il" class="il">N</li>
-        <li data-state="in" class="in">O</li>
-        <li data-state="ia" class="ia">P</li>
-        <li data-state="ks" class="ks">Q</li>
-        <li data-state="ky" class="ky">R</li>
-        <li data-state="la" class="la">S</li>
-        <li data-state="me" class="me">T</li>
-        <li data-state="md" class="md">U</li>
-        <li data-state="ma" class="ma">V</li>
-        <li data-state="mi" class="mi">W</li>
-        <li data-state="mn" class="mn">X</li>
-        <li data-state="ms" class="ms">Y</li>
-        <li data-state="mo" class="mo">Z</li>
-        <li data-state="mt" class="mt">a</li>
-        <li data-state="ne" class="ne">b</li>
-        <li data-state="nv" class="nv">c</li>
-        <li data-state="nh" class="nh">d</li>
-        <li data-state="nj" class="nj">e</li>
-        <li data-state="nm" class="nm">f</li>
-        <li data-state="ny" class="ny">g</li>
-        <li data-state="nc" class="nc">h</li>
-        <li data-state="nd" class="nd">i</li>
-        <li data-state="oh" class="oh">j</li>			
-        <li data-state="ok" class="ok">k</li>
-        <li data-state="or" class="or">l</li>
-        <li data-state="pa" class="pa">m</li>
-        <li data-state="ri" class="ri">n</li>
-        <li data-state="sc" class="sc">o</li>
-        <li data-state="sd" class="sd">p</li>
-        <li data-state="tn" class="tn">q</li>
-        <li data-state="tx" class="tx">r</li>
-        <li data-state="ut" class="ut">s</li>
-        <li data-state="va" class="va">t</li>
-        <li data-state="vt" class="vt">u</li>			
-        <li data-state="wa" class="wa">v</li>
-        <li data-state="wv" class="wv">w</li>
-        <li data-state="wi" class="wi">x</li>
-        <li data-state="wy" class="wy">y</li>
-    </ul>
+```html
+<ul class="stately"> 
+    <li data-state="al" class="al">A</li>
+    <li data-state="ak" class="ak">B</li>
+    <li data-state="ar" class="ar">C</li>						
+    <li data-state="az" class="az">D</li>
+    <li data-state="ca" class="ca">E</li>
+    <li data-state="co" class="co">F</li>
+    <li data-state="ct" class="ct">G</li>
+    <li data-state="de" class="de">H</li>
+    <li data-state="dc" class="dc">I</li>
+    <li data-state="fl" class="fl">J</li>
+    <li data-state="ga" class="ga">K</li>
+    <li data-state="hi" class="hi">L</li>
+    <li data-state="id" class="id">M</li>
+    <li data-state="il" class="il">N</li>
+    <li data-state="in" class="in">O</li>
+    <li data-state="ia" class="ia">P</li>
+    <li data-state="ks" class="ks">Q</li>
+    <li data-state="ky" class="ky">R</li>
+    <li data-state="la" class="la">S</li>
+    <li data-state="me" class="me">T</li>
+    <li data-state="md" class="md">U</li>
+    <li data-state="ma" class="ma">V</li>
+    <li data-state="mi" class="mi">W</li>
+    <li data-state="mn" class="mn">X</li>
+    <li data-state="ms" class="ms">Y</li>
+    <li data-state="mo" class="mo">Z</li>
+    <li data-state="mt" class="mt">a</li>
+    <li data-state="ne" class="ne">b</li>
+    <li data-state="nv" class="nv">c</li>
+    <li data-state="nh" class="nh">d</li>
+    <li data-state="nj" class="nj">e</li>
+    <li data-state="nm" class="nm">f</li>
+    <li data-state="ny" class="ny">g</li>
+    <li data-state="nc" class="nc">h</li>
+    <li data-state="nd" class="nd">i</li>
+    <li data-state="oh" class="oh">j</li>			
+    <li data-state="ok" class="ok">k</li>
+    <li data-state="or" class="or">l</li>
+    <li data-state="pa" class="pa">m</li>
+    <li data-state="ri" class="ri">n</li>
+    <li data-state="sc" class="sc">o</li>
+    <li data-state="sd" class="sd">p</li>
+    <li data-state="tn" class="tn">q</li>
+    <li data-state="tx" class="tx">r</li>
+    <li data-state="ut" class="ut">s</li>
+    <li data-state="va" class="va">t</li>
+    <li data-state="vt" class="vt">u</li>			
+    <li data-state="wa" class="wa">v</li>
+    <li data-state="wv" class="wv">w</li>
+    <li data-state="wi" class="wi">x</li>
+    <li data-state="wy" class="wy">y</li>
+</ul>
+```
     
 Set the size and base map color in your CSS:
 
-    .stately {
-      width: 300px;     //width and font size must match 
-  	  font-size: 300px; //width and font size must match 
-  	  color: #f0f0f0;
-    }
+```css
+.stately {
+    width: 300px;     /* width and font size must match */
+    font-size: 300px; /*width and font size must match */
+    color: #f0f0f0;
+}
+```
     
 Style Individual State:
 
-    .stately .va,
-    .stately .md,
-    .stately .dc { 
-       color: #FF0000;
-    }
+```css
+.stately .va,
+.stately .md,
+.stately .dc { 
+   color: #FF0000;
+}
+```
     
 If you are not using Sass for your project, you can use and edit the compiled CSS files. The included files have been compiled using the `expanded` output style for readability.
     
