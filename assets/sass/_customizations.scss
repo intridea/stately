@@ -1,91 +1,26 @@
-.stately {
-	background: #f2f2f2;	
-	padding: 20px;
-	border-radius: 10px;
-	border-top: 1px solid #dddddd;
-}
-
-#intrideans {
+@mixin mapstyle($style) {
+	@if $style == intrideans {
+		color: #b0b0b0;
+		.ca,  .co,  .dc,  .fl,  .ks,  .md,  .mn,  .mi,  .nj,  .ny,  .oh,  .va,  .wa,  .wy {
+		color: #a3d07e;
+		}
+	}
+	@else if $style == political {
+		color:#00aeef;
 	
-	color: #b0b0b0;
-	
-	.ca,
-  .co,
-  .dc,
-  .fl,
-  .ks,
-  .md,
-  .mn,
-  .mi,
-  .nj,
-  .ny,
-  .oh,
-  .va,
-  .wa,
-  .wy {
-  	color: #a3d07e;
-  }
-  
-} // #intrideans
-
-#election {
-	
-	color:#00aeef;
-	
-	.id,
-  .ut,
-  .az,
-  .ak,
-  .wy,
-  .mt,
-  .no,
-  .sd,
-  .nd,
-  .ne,
-  .ks,
-  .ok,
-  .tx,
-  .mo,
-  .ar,
-  .la,
-  .ms,
-  .tn,
-  .ky,
-  .wv,
-  .nc,
-  .sc,
-  .ga,
-  .al {
+	.id,  .ut,  .az,  .ak,  .wy,  .mt,  .no,  .sd,  .nd,  .ne,  .ks,  .ok,  .tx,  .mo,  .ar,  .la,  .ms,  .tn,
+  .ky,  .wv,  .nc,  .sc,  .ga,  .al {
   	color:#ff7474;
-  }
-	
-} // #election
-
-#presidents {
-  
+  }		
+	}
+	@else if $style == neutral {
 	color: #b0b0b0;
-
-  .va,
-  .oh,
-  .ma,
-  .ny,
-  .nc,
-  .tx,
-  .vt,
-  .ar,
-  .ca,
-  .ct,
-  .ga,
-  .hi,
-  .il,
-  .ia,
-  .ky,
-  .mo,
-  .ne,
-  .nj,
-  .pa,
-  .sc {
+  .va,  .oh,  .ma,  .ny,  .nc,  .tx,  .vt,  .ar,  .ca,  .ct,  .ga,  .hi,  .il,  .ia,  .ky,  .mo,  .ne,  .nj,  .pa,  .sc {
   	color:#ff8b3e;
-  }
-  
-} // #presidents
+  }		
+	}
+	@else {
+		color: #999;
+	}
+} //mapstyle mixin
+

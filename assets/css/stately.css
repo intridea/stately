@@ -5,11 +5,11 @@
   src: url("../font/stately-webfont.eot");
   src: url("../font/stately-webfont.eot?#iefix") format("embedded-opentype"), url("../font/stately-webfont.woff") format("woff"), url("../font/stately-webfont.ttf") format("truetype"), url("../font/stately-webfont.svg#testfontRegular") format("svg");
   font-weight: normal;
-  font-style: normal;
-}
+  font-style: normal; }
 
 .stately {
-  font: normal normal 300px/100% "stately-webfont";
+  font: normal normal 300px "stately-webfont";
+  line-height: 100%;
   font-size-adjust: none;
   -webkit-text-rendering: optimizeLegibility;
   -moz-text-rendering: optimizeLegibility;
@@ -25,105 +25,40 @@
   margin: 0 auto;
   padding: 0;
   list-style: none;
-}
-.stately li {
-  float: left;
-  margin: -20% 0 0 -100%;
-  position: relative;
-  left: 101%;
-  width: 100%;
-  cursor: default;
-  -webkit-transition: all 1s ease-in;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+  background: #eeeeee;
+  border-radius: 0; }
+  .stately li {
+    float: left;
+    margin: -20% 0 0 -100%;
+    position: relative;
+    left: 101%;
+    width: 100%;
+    cursor: default;
+    -webkit-transition: all 1s ease-in;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
 
 /** Style customizations
 *************************************/
-.stately {
-  background: #f2f2f2;
-  padding: 20px;
-  border-radius: 10px;
-  border-top: 1px solid #dddddd;
-}
-
 #intrideans {
-  color: #b0b0b0;
-}
-#intrideans .ca,
-#intrideans .co,
-#intrideans .dc,
-#intrideans .fl,
-#intrideans .ks,
-#intrideans .md,
-#intrideans .mn,
-#intrideans .mi,
-#intrideans .nj,
-#intrideans .ny,
-#intrideans .oh,
-#intrideans .va,
-#intrideans .wa,
-#intrideans .wy {
-  color: #a3d07e;
-}
+  color: #b0b0b0; }
+  #intrideans .ca, #intrideans .co, #intrideans .dc, #intrideans .fl, #intrideans .ks, #intrideans .md, #intrideans .mn, #intrideans .mi, #intrideans .nj, #intrideans .ny, #intrideans .oh, #intrideans .va, #intrideans .wa, #intrideans .wy {
+    color: #a3d07e; }
 
 #election {
-  color: #00aeef;
-}
-#election .id,
-#election .ut,
-#election .az,
-#election .ak,
-#election .wy,
-#election .mt,
-#election .no,
-#election .sd,
-#election .nd,
-#election .ne,
-#election .ks,
-#election .ok,
-#election .tx,
-#election .mo,
-#election .in,
-#election .ar,
-#election .la,
-#election .ms,
-#election .tn,
-#election .ky,
-#election .wv,
-#election .nc,
-#election .sc,
-#election .ga,
-#election .al {
-  color: #ff7474;
-}
+  color: #00aeef; }
+  #election .id, #election .ut, #election .az, #election .ak, #election .wy, #election .mt, #election .no, #election .sd, #election .nd, #election .ne, #election .ks, #election .ok, #election .tx, #election .mo, #election .ar, #election .la, #election .ms, #election .tn,
+  #election .ky, #election .wv, #election .nc, #election .sc, #election .ga, #election .al {
+    color: #ff7474; }
 
 #presidents {
-  color: #b0b0b0;
-}
-#presidents .va,
-#presidents .oh,
-#presidents .ma,
-#presidents .ny,
-#presidents .nc,
-#presidents .tx,
-#presidents .vt,
-#presidents .ar,
-#presidents .ca,
-#presidents .ct,
-#presidents .ga,
-#presidents .hi,
-#presidents .il,
-#presidents .ia,
-#presidents .ky,
-#presidents .mo,
-#presidents .ne,
-#presidents .nj,
-#presidents .pa,
-#presidents .sc {
-  color: #ff8b3e;
-}
+  color: #b0b0b0; }
+  #presidents .va, #presidents .oh, #presidents .ma, #presidents .ny, #presidents .nc, #presidents .tx, #presidents .vt, #presidents .ar, #presidents .ca, #presidents .ct, #presidents .ga, #presidents .hi, #presidents .il, #presidents .ia, #presidents .ky, #presidents .mo, #presidents .ne, #presidents .nj, #presidents .pa, #presidents .sc {
+    color: #ff8b3e; }
+
+#plain {
+  color: #999; }

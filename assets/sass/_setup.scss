@@ -11,7 +11,8 @@
 }
 
 .stately {
-  font: normal normal 300px/100% "stately-webfont";
+  font: normal normal $map_width "stately-webfont";
+  line-height: 100%;
 	font-size-adjust: none;
 	-webkit-text-rendering: optimizeLegibility;
 	   -moz-text-rendering: optimizeLegibility;
@@ -22,11 +23,13 @@
 	 -ms-font-feature-settings: "liga" 1;
 	 -ms-font-feature-settings: "liga", "dlig"; 
 	overflow: hidden;
-	width: 300px;
+	width: $map_width;
 	display: block;
 	margin: 0 auto;
 	padding: 0;
 	list-style: none;	
+	background: $map_bgd_color;	
+	border-radius: $map_border_radius;
 	
 	li { 
   	float: left;

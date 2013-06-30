@@ -1,2 +1,7 @@
 .DS_Store
 .sass-cache
+
+# Project Files
+mixture.json
+*.komodoproject
+tmp/
