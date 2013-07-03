@@ -3,228 +3,34 @@
 <head>
   <meta charset="utf-8">
   <title>Stately | The simple map font + D3.js</title>
-  <meta name="description" content="Stately | The simple map font">
-<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-  <link rel="stylesheet" href="assets/css/screen.css?v=1.0">
-  <link rel="stylesheet" href="assets/css/stately.css?v=1.0">
+	<meta name="description" content="Stately | The simple map font">
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<link rel="stylesheet" href="assets/css/stately.css?v=1.1">
+	<script src="assets/js/main.min.js?v=1.0" charset="utf-8"></script>
 </head>
 <body>
-	<h1>Plain</h1>
-	<ul class="stately" id="plain"> 
-		<li data-state="al" class="al">A</li>
-		<li data-state="ak" class="ak">B</li>
-		<li data-state="ar" class="ar">C</li>						
-		<li data-state="az" class="az">D</li>
-		<li data-state="ca" class="ca">E</li>
-		<li data-state="co" class="co">F</li>
-		<li data-state="ct" class="ct">G</li>
-		<li data-state="de" class="de">H</li>
-		<li data-state="dc" class="dc">I</li>
-		<li data-state="fl" class="fl">J</li>
-		<li data-state="ga" class="ga">K</li>
-		<li data-state="hi" class="hi">L</li>
-		<li data-state="id" class="id">M</li>
-		<li data-state="il" class="il">N</li>
-		<li data-state="in" class="in">O</li>
-		<li data-state="ia" class="ia">P</li>
-		<li data-state="ks" class="ks">Q</li>
-		<li data-state="ky" class="ky">R</li>
-		<li data-state="la" class="la">S</li>
-		<li data-state="me" class="me">T</li>
-		<li data-state="md" class="md">U</li>
-		<li data-state="ma" class="ma">V</li>
-		<li data-state="mi" class="mi">W</li>
-		<li data-state="mn" class="mn">X</li>
-		<li data-state="ms" class="ms">Y</li>
-		<li data-state="mo" class="mo">Z</li>
-		<li data-state="mt" class="mt">a</li>
-		<li data-state="ne" class="ne">b</li>
-		<li data-state="nv" class="nv">c</li>
-		<li data-state="nh" class="nh">d</li>
-		<li data-state="nj" class="nj">e</li>
-		<li data-state="nm" class="nm">f</li>
-		<li data-state="ny" class="ny">g</li>
-		<li data-state="nc" class="nc">h</li>
-		<li data-state="nd" class="nd">i</li>
-		<li data-state="oh" class="oh">j</li>			
-		<li data-state="ok" class="ok">k</li>
-		<li data-state="or" class="or">l</li>
-		<li data-state="pa" class="pa">m</li>
-		<li data-state="ri" class="ri">n</li>
-		<li data-state="sc" class="sc">o</li>
-		<li data-state="sd" class="sd">p</li>
-		<li data-state="tn" class="tn">q</li>
-		<li data-state="tx" class="tx">r</li>
-		<li data-state="ut" class="ut">s</li>
-		<li data-state="va" class="va">t</li>
-		<li data-state="vt" class="vt">u</li>			
-		<li data-state="wa" class="wa">v</li>
-		<li data-state="wv" class="wv">w</li>
-		<li data-state="wi" class="wi">x</li>
-		<li data-state="wy" class="wy">y</li>	
-	</ul>
-	<h1>Intrideans</h1>
-	<ul class="stately" id="intrideans"> 
-		<li data-state="al" class="al">A</li>
-		<li data-state="ak" class="ak">B</li>
-		<li data-state="ar" class="ar">C</li>						
-		<li data-state="az" class="az">D</li>
-		<li data-state="ca" class="ca">E</li>
-		<li data-state="co" class="co">F</li>
-		<li data-state="ct" class="ct">G</li>
-		<li data-state="de" class="de">H</li>
-		<li data-state="dc" class="dc">I</li>
-		<li data-state="fl" class="fl">J</li>
-		<li data-state="ga" class="ga">K</li>
-		<li data-state="hi" class="hi">L</li>
-		<li data-state="id" class="id">M</li>
-		<li data-state="il" class="il">N</li>
-		<li data-state="in" class="in">O</li>
-		<li data-state="ia" class="ia">P</li>
-		<li data-state="ks" class="ks">Q</li>
-		<li data-state="ky" class="ky">R</li>
-		<li data-state="la" class="la">S</li>
-		<li data-state="me" class="me">T</li>
-		<li data-state="md" class="md">U</li>
-		<li data-state="ma" class="ma">V</li>
-		<li data-state="mi" class="mi">W</li>
-		<li data-state="mn" class="mn">X</li>
-		<li data-state="ms" class="ms">Y</li>
-		<li data-state="mo" class="mo">Z</li>
-		<li data-state="mt" class="mt">a</li>
-		<li data-state="ne" class="ne">b</li>
-		<li data-state="nv" class="nv">c</li>
-		<li data-state="nh" class="nh">d</li>
-		<li data-state="nj" class="nj">e</li>
-		<li data-state="nm" class="nm">f</li>
-		<li data-state="ny" class="ny">g</li>
-		<li data-state="nc" class="nc">h</li>
-		<li data-state="nd" class="nd">i</li>
-		<li data-state="oh" class="oh">j</li>			
-		<li data-state="ok" class="ok">k</li>
-		<li data-state="or" class="or">l</li>
-		<li data-state="pa" class="pa">m</li>
-		<li data-state="ri" class="ri">n</li>
-		<li data-state="sc" class="sc">o</li>
-		<li data-state="sd" class="sd">p</li>
-		<li data-state="tn" class="tn">q</li>
-		<li data-state="tx" class="tx">r</li>
-		<li data-state="ut" class="ut">s</li>
-		<li data-state="va" class="va">t</li>
-		<li data-state="vt" class="vt">u</li>			
-		<li data-state="wa" class="wa">v</li>
-		<li data-state="wv" class="wv">w</li>
-		<li data-state="wi" class="wi">x</li>
-		<li data-state="wy" class="wy">y</li>	
-	</ul>
-	<h1>2012 Presidential Election</h1>
-	<ul class="stately" id="election"> 
-		<li data-state="al" class="al">A</li>
-		<li data-state="ak" class="ak">B</li>
-		<li data-state="ar" class="ar">C</li>						
-		<li data-state="az" class="az">D</li>
-		<li data-state="ca" class="ca">E</li>
-		<li data-state="co" class="co">F</li>
-		<li data-state="ct" class="ct">G</li>
-		<li data-state="de" class="de">H</li>
-		<li data-state="dc" class="dc">I</li>
-		<li data-state="fl" class="fl">J</li>
-		<li data-state="ga" class="ga">K</li>
-		<li data-state="hi" class="hi">L</li>
-		<li data-state="id" class="id">M</li>
-		<li data-state="il" class="il">N</li>
-		<li data-state="in" class="in">O</li>
-		<li data-state="ia" class="ia">P</li>
-		<li data-state="ks" class="ks">Q</li>
-		<li data-state="ky" class="ky">R</li>
-		<li data-state="la" class="la">S</li>
-		<li data-state="me" class="me">T</li>
-		<li data-state="md" class="md">U</li>
-		<li data-state="ma" class="ma">V</li>
-		<li data-state="mi" class="mi">W</li>
-		<li data-state="mn" class="mn">X</li>
-		<li data-state="ms" class="ms">Y</li>
-		<li data-state="mo" class="mo">Z</li>
-		<li data-state="mt" class="mt">a</li>
-		<li data-state="ne" class="ne">b</li>
-		<li data-state="nv" class="nv">c</li>
-		<li data-state="nh" class="nh">d</li>
-		<li data-state="nj" class="nj">e</li>
-		<li data-state="nm" class="nm">f</li>
-		<li data-state="ny" class="ny">g</li>
-		<li data-state="nc" class="nc">h</li>
-		<li data-state="nd" class="nd">i</li>
-		<li data-state="oh" class="oh">j</li>			
-		<li data-state="ok" class="ok">k</li>
-		<li data-state="or" class="or">l</li>
-		<li data-state="pa" class="pa">m</li>
-		<li data-state="ri" class="ri">n</li>
-		<li data-state="sc" class="sc">o</li>
-		<li data-state="sd" class="sd">p</li>
-		<li data-state="tn" class="tn">q</li>
-		<li data-state="tx" class="tx">r</li>
-		<li data-state="ut" class="ut">s</li>
-		<li data-state="va" class="va">t</li>
-		<li data-state="vt" class="vt">u</li>			
-		<li data-state="wa" class="wa">v</li>
-		<li data-state="wv" class="wv">w</li>
-		<li data-state="wi" class="wi">x</li>
-		<li data-state="wy" class="wy">y</li>	
-	</ul>
-	<h1>Presidential Birth States</h1>
-	<ul class="stately" id="presidents"> 
-		<li data-state="al" class="al">A</li>
-		<li data-state="ak" class="ak">B</li>
-		<li data-state="ar" class="ar">C</li>						
-		<li data-state="az" class="az">D</li>
-		<li data-state="ca" class="ca">E</li>
-		<li data-state="co" class="co">F</li>
-		<li data-state="ct" class="ct">G</li>
-		<li data-state="de" class="de">H</li>
-		<li data-state="dc" class="dc">I</li>
-		<li data-state="fl" class="fl">J</li>
-		<li data-state="ga" class="ga">K</li>
-		<li data-state="hi" class="hi">L</li>
-		<li data-state="id" class="id">M</li>
-		<li data-state="il" class="il">N</li>
-		<li data-state="in" class="in">O</li>
-		<li data-state="ia" class="ia">P</li>
-		<li data-state="ks" class="ks">Q</li>
-		<li data-state="ky" class="ky">R</li>
-		<li data-state="la" class="la">S</li>
-		<li data-state="me" class="me">T</li>
-		<li data-state="md" class="md">U</li>
-		<li data-state="ma" class="ma">V</li>
-		<li data-state="mi" class="mi">W</li>
-		<li data-state="mn" class="mn">X</li>
-		<li data-state="ms" class="ms">Y</li>
-		<li data-state="mo" class="mo">Z</li>
-		<li data-state="mt" class="mt">a</li>
-		<li data-state="ne" class="ne">b</li>
-		<li data-state="nv" class="nv">c</li>
-		<li data-state="nh" class="nh">d</li>
-		<li data-state="nj" class="nj">e</li>
-		<li data-state="nm" class="nm">f</li>
-		<li data-state="ny" class="ny">g</li>
-		<li data-state="nc" class="nc">h</li>
-		<li data-state="nd" class="nd">i</li>
-		<li data-state="oh" class="oh">j</li>			
-		<li data-state="ok" class="ok">k</li>
-		<li data-state="or" class="or">l</li>
-		<li data-state="pa" class="pa">m</li>
-		<li data-state="ri" class="ri">n</li>
-		<li data-state="sc" class="sc">o</li>
-		<li data-state="sd" class="sd">p</li>
-		<li data-state="tn" class="tn">q</li>
-		<li data-state="tx" class="tx">r</li>
-		<li data-state="ut" class="ut">s</li>
-		<li data-state="va" class="va">t</li>
-		<li data-state="vt" class="vt">u</li>			
-		<li data-state="wa" class="wa">v</li>
-		<li data-state="wv" class="wv">w</li>
-		<li data-state="wi" class="wi">x</li>
-		<li data-state="wy" class="wy">y</li>	
-	</ul>
+	<h1>Stately + D3 Examples</h1>
+	<p style="padding: 0.8em 0 1em 0; font-size: 1em;"><a href="https://github.com/cherihung/stately/tree/dev-d3" target="_blank">See this on Github (dev-d3 branch)</a></p>
+	<h2>1. Neutral Style</h2>
+	<ul class="stately" id="mymap"></ul>
+	<h2>2. Intridean Style</h2>
+	<ul class="stately" id="intrideans"></ul>
+	<h2>3. Political Style</h2>
+	<ul class="stately" id="political"></ul>
+	<script type="text/javascript">
+	window.onload = function () {
+		var data = 'https://docs.google.com/spreadsheet/pub?key=0AjmYvlppihFRdGJjelBDeDAzbGlUWld3YXdoSEN1dFE&output=csv'; //data source
+		var data_boolean_col = 'selected'; //column name; use value from this column for map_a and map_b
+		var data_type_col = 'type'; //column name; use value from this column for map_c
+		var map_a = new drawMap(); //example for neutral style; true/false map
+		var map_b = new drawMap(); //example for intridean style; true/false map
+		var map_c = new drawMap(); //example for politcal style; categorized map
+		/* function takes 3 required parameter: draw([element id], [data source url], [column header name for the data point]) */
+		map_a.draw("mymap", data, data_boolean_col);
+		map_b.draw("intrideans", data, data_boolean_col);
+		map_c.draw("political", data, data_type_col);
+	}
+	</script>
+	
 </body>
 </html>
