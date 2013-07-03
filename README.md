@@ -2,13 +2,15 @@
 Stately is a symbol font that makes is easy to create a map of the United States using only HTML and CSS. Each state can be styled independently with CSS for making simple visualizations. And since it's a font, it scales bigger and smaller while staying sharp as a tack.
 
 ##Files
-    map.svg      - SVG map used to create the font
-    assets\font  - Folder containing the web-font files
-    assets\sass  - Folder containing basic Sass files, including both Stately setup and stately.html demo customizations
-    assets\css   - Folder containing compiled CSS files
-    stately.html - Basic Demo
-    stately.svg  - SVG font file
-    stately.ttf  - TrueType font file
+    map.svg         - SVG map used to create the font
+    assets\font     - Folder containing the web-font files
+    assets\sass     - Folder containing basic Sass files, including both Stately setup and stately.html demo customizations
+    assets\css      - Folder containing compiled CSS files
+    assets\js       - Folder containing JS file with a drawMap() class to integrate with D3.js to dynamically create a State.ly map. Includes a minified version.
+    stately.html    - Basic Demo
+    stately-d3.html - D3 version Demo
+    stately.svg     - SVG font file
+    stately.ttf     - TrueType font file
     
 
 ##What is Stately?
@@ -103,10 +105,50 @@ Style Individual State:
 ```
     
 If you are not using Sass for your project, you can use and edit the compiled CSS files. The included files have been compiled using the `expanded` output style for readability.
-    
+
+##D3 Version Use Case
+Following added by @CheriHung
+
 ##Live Example
 
-[Stately Microsite](http://intridea.github.com/stately/)
+[Stately + D3 Examples](http://d.cyhung.net/sandbox/stately/stately-d3.html)
+
+##Basic Usage
+
+1. You will need a csv as the data source. Can be an actual .csv file or, as in the case of this demo, uses a Google doc published CSV url.
+See the <a href="https://docs.google.com/spreadsheet/ccc?key=0AjmYvlppihFRdGJjelBDeDAzbGlUWld3YXdoSEN1dFE&usp=sharing">sample Google doc</a>.
+
+2. Include these three files in HEAD
+
+```html
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<link rel="stylesheet" href="assets/css/stately.css?v=1.1">
+<script src="assets/js/main.min.js?v=1.0" charset="utf-8"></script>
+```
+
+3. In BODY, create a holder <ul> element for the dynamic map. Give it an unique ID. e.g. <ul class="stately" id="mymap"></ul>
+
+4. Create a new drawMap() instance to generate the map. See stately-d3.html demo file for a code sample.  Here's a brief explanation to the code sample:
+
+```html
+	window.onload = function () {
+                //create the new instance
+                var map = new drawMap();
+                
+                //initiate the draw function. It takes 3 required parameter: draw([id], [data source], [data point])
+                map.draw("mymap", "https://docs.google.com/spreadsheet/pub?key=0AjmYvlppihFRdGJjelBDeDAzbGlUWld3YXdoSEN1dFE&output=csv", "selected");
+	}
+```
+
+- id: the holder element id to display the map
+- data source: url to csv file or google doc's csv link
+- data point: name of the column header in the data source to be used for mapping.  This is helpful when you have one data file that holds multiple data points for every state. And you want to map one data point per map instance. Saves time for creating multiple data files.
+
+The stately-d3.html demo file shows how to add multiple maps to a page.  It also shows the purpose of having a "data point" parameter. Map 1 and 2 use the same data point, "selected" which is a column with boolean (true/false) values. Map 3 uses a different data point, "type" which contains values "red," "blue," and "na" which are useful to describe US political map.
+
+##About Color Coding in this D3-powered Version
+
+Color of each state is set by assigning a css class to it.  The class is the value in the data point column with all white spaces removed and text lowercased. e.g. Map 1 and 2 assigns either .true or .false to each state. Map 3 assigns .red, .blue or .na to each state.  Then, you define the color for each class in _customization.scss. This gives flexibility in styling the maps. No need to edit the drawMap() function to change style.
 
 ##Resources
 
@@ -122,7 +164,11 @@ Ben Markowitz
 [website](http://www.benmarkowitz.com)  
 
 Intridea  
-[website](http://www.intridea.com)  
+[website](http://www.intridea.com)
+
+D3 support created by Cheri Hung
+[twitter] (http://www.twitter.com/cyhung)
+[blog] (http://www.cyhung.net)
 
 ##License
 
