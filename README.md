@@ -115,7 +115,7 @@ Following added by @CheriHung
 
 ##Basic Usage
 
-1. You will need a csv as the data source. Can be an actual .csv file or, as in the case of this demo, uses a Google doc published CSV url.
+1. You will need a csv as the data source. Can be an actual .csv file or, as in the case of this demo, use a Google doc published CSV url.
 See the <a href="https://docs.google.com/spreadsheet/ccc?key=0AjmYvlppihFRdGJjelBDeDAzbGlUWld3YXdoSEN1dFE&usp=sharing">sample Google doc</a>.
 
 2. Include these three files in HEAD
@@ -126,7 +126,7 @@ See the <a href="https://docs.google.com/spreadsheet/ccc?key=0AjmYvlppihFRdGJjel
 <script src="assets/js/main.min.js?v=1.0" charset="utf-8"></script>
 ```
 
-3. In BODY, create a holder <ul> element for the dynamic map. Give it an unique ID. e.g. <ul class="stately" id="mymap"></ul>
+3. In BODY, create a holder UL element for the dynamic map. Give it an unique ID. e.g. ```html <ul class="stately" id="mymap"></ul>```
 
 4. Create a new drawMap() instance to generate the map. See stately-d3.html demo file for a code sample.  Here's a brief explanation to the code sample:
 
@@ -140,9 +140,9 @@ See the <a href="https://docs.google.com/spreadsheet/ccc?key=0AjmYvlppihFRdGJjel
 	}
 ```
 
-- id: the holder element id to display the map
-- data source: url to csv file or google doc's csv link
-- data point: name of the column header in the data source to be used for mapping.  This is helpful when you have one data file that holds multiple data points for every state. And you want to map one data point per map instance. Saves time for creating multiple data files.
+- *id*: the holder element id to display the map
+- *data source*: url to csv file or google doc's csv link
+- *data point*: name of the column header in the data source to be used for mapping.  This is helpful when you have one data file that holds multiple data points for every state. And you want to map one data point per map instance. Saves time for creating multiple data files.
 
 The stately-d3.html demo file shows how to add multiple maps to a page.  It also shows the purpose of having a "data point" parameter. Map 1 and 2 use the same data point, "selected" which is a column with boolean (true/false) values. Map 3 uses a different data point, "type" which contains values "red," "blue," and "na" which are useful to describe US political map.
 
@@ -167,8 +167,9 @@ Intridea
 [website](http://www.intridea.com)
 
 D3 support created by Cheri Hung
-[twitter] (http://www.twitter.com/cyhung)
-[blog] (http://www.cyhung.net)
+
+[twitter](http://www.twitter.com/cyhung) <br/>
+[blog](http://www.cyhung.net)
 
 ##License
 
