@@ -148,7 +148,7 @@ The stately-d3.html demo file shows how to add multiple maps to a page.  It also
 
 ##About Color Coding in this D3-powered Version
 
-Color of each state is set by assigning a css class to it.  The class is the value in the data point column with all white spaces removed and text lowercased. e.g. Map 1 and 2 assigns either .true or .false to each state. Map 3 assigns .red, .blue or .na to each state.  Then, you define the color for each class in _customization.scss. This gives flexibility in styling the maps. No need to edit the drawMap() function to change style.
+Color of each state is set by assigning a css class to it.  The class is the value in the data point column with all white spaces removed and text lowercased. e.g. Map 1 and 2 assigns either .true or .false to each state. Map 3 assigns .rep, .dem or .na to each state.  Then, you define the color for each class in _customization.scss. This gives flexibility in styling the maps. No need to edit the drawMap() function to change style.
 
 ##Resources
 

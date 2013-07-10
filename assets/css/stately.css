@@ -107,7 +107,7 @@ h1 {
 
 #political {
   color: #b0b0b0; }
-  #political .red {
+  #political .red, #political .rep {
     color: #ff7474; }
-  #political .blue {
+  #political .blue, #political .dem {
     color: #00aeef; }

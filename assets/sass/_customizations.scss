@@ -12,10 +12,10 @@
 	
 	@else if $style == political {
 
-		.red {
+		.red, .rep {
 			color:#ff7474;
 		}
-		.blue {
+		.blue, .dem {
 			color:#00aeef;
 		}
 		color: #b0b0b0;
