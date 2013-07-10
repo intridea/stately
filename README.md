@@ -144,7 +144,7 @@ See the <a href="https://docs.google.com/spreadsheet/ccc?key=0AjmYvlppihFRdGJjel
 - *data source*: url to csv file or google doc's csv link
 - *data point*: name of the column header in the data source to be used for mapping.  This is helpful when you have one data file that holds multiple data points for every state. And you want to map one data point per map instance. Saves time for creating multiple data files.
 
-The stately-d3.html demo file shows how to add multiple maps to a page.  It also shows the purpose of having a "data point" parameter. Map 1 and 2 use the same data point, "selected" which is a column with boolean (true/false) values. Map 3 uses a different data point, "type" which contains values "red," "blue," and "na" which are useful to describe US political map.
+The stately-d3.html demo file shows how to add multiple maps to a page.  It also shows the purpose of having a "data point" parameter. Map 1 and 2 use the same data point, "selected" which is a column with boolean (true/false) values. Map 3 uses a different data point, "type" which contains values "rep," "dem," and "na" which are useful to describe US political map.
 
 ##About Color Coding in this D3-powered Version
 
