@@ -12,8 +12,7 @@ function drawMap() {
   var nodes = d3.nest()
   .entries(data);
   
-   //loop to build map
-   for (var i=0;i<1;i++){
+   //build map
     d3.select('#'+mapid)
         .selectAll('#'+mapid+' li')
         .data(nodes)
@@ -22,9 +21,7 @@ function drawMap() {
             .attr("id",function(d){return d.abb}) //add id to state abbreviation
             .attr("class",function(d){return toClass(d[datacol]);}) //add class to value in data column, this determines the color of each state
             .attr("data-state",function(d){return d.abb}) //add data-state attr to state abbreviation
-            .text(function(d){return d.letter}); //add letter corresponding to each state. this is a fail-safe for older browsers
-    }
-    
+            .text(function(d){return d.letter}); //add letter corresponding to each state. this is a fail-safe for older browsers   
     });
   
   }; //end draw();
