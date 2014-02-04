@@ -8,7 +8,7 @@
   font-style: normal; }
 
 .stately {
-  font: normal normal 300px "stately-webfont";
+  font: normal normal 600px "stately-webfont";
   line-height: 100%;
   font-size-adjust: none;
   -webkit-text-rendering: optimizeLegibility;
@@ -20,7 +20,7 @@
   -ms-font-feature-settings: "liga" 1;
   -ms-font-feature-settings: "liga", "dlig";
   overflow: hidden;
-  width: 300px;
+  width: 600px;
   display: block;
   margin: 0 auto;
   padding: 0;
@@ -44,21 +44,70 @@
 
 /** Style customizations
 *************************************/
+/** Page styles
+*************************************/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+fieldset, img {
+  border: 0; }
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal; }
+
+ol, ul {
+  list-style: none; }
+
+caption, th {
+  text-align: left; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+q:before, q:after {
+  content: ''; }
+
+abbr, acronym {
+  border: 0; }
+
+/*end reset*/
+body {
+  width: 600px;
+  margin: 0 auto;
+  font-family: "helvetica neue",arial,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  padding: 0 0 40px; }
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 24px 0 6px;
+  color: #9d9d9d; }
+
+#mymap {
+  color: #b0b0b0; }
+  #mymap .true {
+    color: #ff8b3e; }
+  #mymap .false {
+    color: #b0b0b0; }
+
 #intrideans {
   color: #b0b0b0; }
-  #intrideans .ca, #intrideans .co, #intrideans .dc, #intrideans .fl, #intrideans .ks, #intrideans .md, #intrideans .mn, #intrideans .mi, #intrideans .nj, #intrideans .ny, #intrideans .oh, #intrideans .va, #intrideans .wa, #intrideans .wy {
+  #intrideans .true {
     color: #a3d07e; }
+  #intrideans .false {
+    color: #b0b0b0; }
 
-#election {
-  color: #00aeef; }
-  #election .id, #election .ut, #election .az, #election .ak, #election .wy, #election .mt, #election .no, #election .sd, #election .nd, #election .ne, #election .ks, #election .ok, #election .tx, #election .mo, #election .ar, #election .la, #election .ms, #election .tn,
-  #election .ky, #election .wv, #election .nc, #election .sc, #election .ga, #election .al {
-    color: #ff7474; }
-
-#presidents {
+#political {
   color: #b0b0b0; }
-  #presidents .va, #presidents .oh, #presidents .ma, #presidents .ny, #presidents .nc, #presidents .tx, #presidents .vt, #presidents .ar, #presidents .ca, #presidents .ct, #presidents .ga, #presidents .hi, #presidents .il, #presidents .ia, #presidents .ky, #presidents .mo, #presidents .ne, #presidents .nj, #presidents .pa, #presidents .sc {
-    color: #ff8b3e; }
-
-#plain {
-  color: #999; }
+  #political .red, #political .rep {
+    color: #ff7474; }
+  #political .blue, #political .dem {
+    color: #00aeef; }

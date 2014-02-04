@@ -1,4 +1,4 @@
-$map_width: 300px;
+$map_width: 600px;
 $map_bgd_color: #eeeeee;
 $map_border_radius: 0;
 
@@ -10,24 +10,18 @@ $map_border_radius: 0;
 *************************************/
 @import "_customizations.scss";
 
-#intrideans {	
-    @include mapstyle(intrideans);
-} // #intrideans
+/** Page styles
+*************************************/
+@import "_screen.scss";
 
-#election {
-	
-    @include mapstyle(political);	
-	
-} // #election
+#mymap {
+     @include mapstyle(neutral);
+}
 
-#presidents {
-  
-    @include mapstyle(neutral);
-  
-} // #presidents
+#intrideans {
+     @include mapstyle(intrideans);
+}
 
-#plain {
-  
-    @include mapstyle(plain);
-  
-} // #presidents
+#political {
+     @include mapstyle(political);
+}

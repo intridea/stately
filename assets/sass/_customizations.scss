@@ -1,24 +1,37 @@
 @mixin mapstyle($style) {
-	@if $style == intrideans {
-		color: #b0b0b0;
-		.ca,  .co,  .dc,  .fl,  .ks,  .md,  .mn,  .mi,  .nj,  .ny,  .oh,  .va,  .wa,  .wy {
-		color: #a3d07e;
-		}
-	}
-	@else if $style == political {
-		color:#00aeef;
 	
-	.id,  .ut,  .az,  .ak,  .wy,  .mt,  .no,  .sd,  .nd,  .ne,  .ks,  .ok,  .tx,  .mo,  .ar,  .la,  .ms,  .tn,
-  .ky,  .wv,  .nc,  .sc,  .ga,  .al {
-  	color:#ff7474;
-  }		
+	@if $style == intrideans {
+		.true {
+			color: #a3d07e;
+		}
+		.false {
+			color: #b0b0b0;
+		}
+		color: #b0b0b0;
 	}
+	
+	@else if $style == political {
+
+		.red, .rep {
+			color:#ff7474;
+		}
+		.blue, .dem {
+			color:#00aeef;
+		}
+		color: #b0b0b0;
+	}
+	
 	@else if $style == neutral {
-	color: #b0b0b0;
-  .va,  .oh,  .ma,  .ny,  .nc,  .tx,  .vt,  .ar,  .ca,  .ct,  .ga,  .hi,  .il,  .ia,  .ky,  .mo,  .ne,  .nj,  .pa,  .sc {
-  	color:#ff8b3e;
-  }		
+		
+		.true {
+		      color:#ff8b3e;
+		}
+		.false {
+		      color: #b0b0b0;
+		}
+		color: #b0b0b0;
 	}
+
 	@else {
 		color: #999;
 	}
