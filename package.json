@@ -4,7 +4,7 @@
   "description": "Symbol font for map of the United States",
   "homepage": "https://github.com/intridea/stately#readme",
   "author": "Ben Markowitz",
-  "main": "stately.html",
+  "main": "stately.svg",
   "license": "MIT",
   "repository": {
     "type": "git",
