@@ -1,7 +1,7 @@
-#Stately
+# Stately
 Stately is a symbol font that makes is easy to create a map of the United States using only HTML and CSS. Each state can be styled independently with CSS for making simple visualizations. And since it's a font, it scales bigger and smaller while staying sharp as a tack.
 
-##Files
+## Files
     map.svg      - SVG map used to create the font
     assets\font  - Folder containing the web-font files
     assets\sass  - Folder containing basic Sass files, including both Stately setup and stately.html demo customizations
@@ -11,12 +11,12 @@ Stately is a symbol font that makes is easy to create a map of the United States
     stately.ttf  - TrueType font file
     
 
-##What is Stately?
+## What is Stately?
 Each state is a glyph within the font. Each state is positioned and sized relative to the the rest of the states, so that when each character is stacked on top of one another, it creates a full map.
 The pertinent characters are uppercase A-Z and lowercase a-z with lowercase y generating the District of Columbia and lowercase z generating a full US map.
 For modern browsers ligatures are available and a state's abbreviation is its ligature. For example, "va" generates the glyph of the state of Virginia and 'dc' the District of Columbia. Additionally, the ligature "usa" produces a character of the full US map.
 
-##Basic Use Case
+## Basic Use Case
 You can use stately however you like, but some base Sass/CSS and HTML is included.
 Download and add the Stately folder to your project which includes the base CSS and the web font files. Grab the stately folder and add it to your project. Then add the stately.css to the head of your document.
 
@@ -104,16 +104,16 @@ Style Individual State:
     
 If you are not using Sass for your project, you can use and edit the compiled CSS files. The included files have been compiled using the `expanded` output style for readability.
     
-##Live Example
+## Live Example
 
 [Stately Microsite](http://intridea.github.com/stately/)
 
-##Resources
+## Resources
 
 [Free Online Font Converter](http://www.freefontconverter.com) - For converting SVG to TTF  
 [Font Squirrel](http://www.fontsquirrel.com/fontface/generator) - For converting TTF to web fonts (make sure you check 'no subsetting')  
 [Intridea Blog: How to Make Your Own Symbol Font](http://www.intridea.com/blog/2012/4/24/symbol-font) - A good starting place
-##Credits
+## Credits
 
 Created by Ben Markowitz at Intridea. 
 
@@ -124,10 +124,10 @@ Ben Markowitz
 Intridea  
 [website](http://www.intridea.com)  
 
-##License
+## License
 
 MIT License. See LICENSE for details.
 
-##Copyright
+## Copyright
 
 Copyright (c) 2013 Intridea, Inc.
