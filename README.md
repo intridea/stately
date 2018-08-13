@@ -12,7 +12,7 @@ Stately is a symbol font that makes is easy to create a map of the United States
     
 
 ##What is Stately?
-Each state is a glyph within the font. Each state is positioned and sized relative to the the rest of the states, so that when each character is stacked on top of one another, it creates a full map.
+Each state is a glyph within the font. Each state is positioned and sized relative to the rest of the states, so that when each character is stacked on top of one another, it creates a full map.
 The pertinent characters are uppercase A-Z and lowercase a-z with lowercase y generating the District of Columbia and lowercase z generating a full US map.
 For modern browsers ligatures are available and a state's abbreviation is its ligature. For example, "va" generates the glyph of the state of Virginia and 'dc' the District of Columbia. Additionally, the ligature "usa" produces a character of the full US map.
 
